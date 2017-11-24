@@ -15,11 +15,21 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.text_tv);
 
-        findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                textView.setText("Hi Hi Hi");
-            }
-        });
+        findViewById(R.id.btn).setOnClickListener(clickListener);
+        findViewById(R.id.log_btn).setOnClickListener(clickListener);
+
     }
+
+    private View.OnClickListener clickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.btn :
+                    break;
+
+                case R.id.log_btn :
+                    break;
+            }
+        }
+    };
 }

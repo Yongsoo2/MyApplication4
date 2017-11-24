@@ -9,17 +9,30 @@
         android:id="@+id/text_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Hello World!"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_tv"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_tv"
         android:layout_marginTop="10dp"
-        android:text="click!"/>
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click!" />
+
+        <Button
+            android:id="@+id/log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn"
+            android:text="LOG" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
