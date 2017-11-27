@@ -1,7 +1,9 @@
 package test.pyo.com.myapplication;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -25,9 +27,12 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.btn :
+                    textView.setText("Hi Hi Hi");
+                    textView.setTextColor(Color.parseColor(String.valueOf(R.color.colorAccent)));
                     break;
 
                 case R.id.log_btn :
+                    Log.e("log btn click :", (String) textView.getText());
                     break;
             }
         }
