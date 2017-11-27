@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.log_btn :
-                    Log.e("log btn click :", (String) textView.getText());
+                    Log.e("log btn click :", textView.getText().toString());
                     break;
             }
         }
