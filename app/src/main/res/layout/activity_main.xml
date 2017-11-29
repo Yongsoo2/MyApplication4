@@ -14,6 +14,7 @@
         android:textSize="30dp" />
 
     <RelativeLayout
+        android:id="@+id/btn_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_tv"
@@ -34,5 +35,12 @@
             android:text="LOG" />
 
     </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_rl"/>
 
 </RelativeLayout>
