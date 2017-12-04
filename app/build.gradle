@@ -52,5 +52,4 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.github.jitpack:android-example:1.0.1'
 
-
 }
