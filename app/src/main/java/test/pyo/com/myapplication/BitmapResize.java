@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class BitmapResize {
 
-    public Bitmap resizeBitmap(Bitmap bitmap, int maxResolution) {
+    public static Bitmap resizeBitmap(Bitmap bitmap, int maxResolution) {
 
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
