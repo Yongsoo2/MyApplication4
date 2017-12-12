@@ -11,4 +11,5 @@ public class Test {
         String test = "test method";
         Log.e("Test class", test);
     }
+
 }

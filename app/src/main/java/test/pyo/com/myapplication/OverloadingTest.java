@@ -8,15 +8,15 @@ import android.util.Log;
 
 public class OverloadingTest {
 
-    public void test(){
+    public static void test(){
         Log.e("매개변수 X", "매개변수 X");
     }
 
-    public void test(int a, int b){
+    public static void test(int a, int b){
         Log.e("매개변수 :", "" + a + ", " + b);
     }
 
-    public void test(String c){
+    public static void test(String c){
         Log.e("매개변수 :", c);
     }
 }
